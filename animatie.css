@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr, auto, auto, 1fr;
+    grid-template-rows: auto, 6em, 6em, 6em;
+    justify-content: left;
+    align-items: left;
+    grid-gap: 1em;
+    overflow-x: hidden;
+}
+
+#knop {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.container {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.vlak1 {
+    /*grid-row: 2/3;*/
+    /*grid-column: 1/2;*/
+    border: solid black 2px;
+    border-bottom: solid black 1px;
+    background-color: dodgerblue;
+    height: 5em;
+    width: 20em;
+    transition: .6s cubic-bezier(.17,.67,.71,1.29);
+}
+.vlak2 {
+    /*grid-row: 3/4;*/
+    /*grid-column: 1/2;*/
+    background-color: white;
+    border: solid black 2px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    height: 5em;
+    width: 20em;
+    transition: .6s cubic-bezier(.37,.67,.71,1.29);
+}
+.vlak3 {
+    /*grid-row: 4/5;*/
+    /*grid-column: 1/2;*/
+    border: solid black 2px;
+    border-top: solid black 1px;
+    background-color: red;
+    height: 5em;
+    width: 20em;
+    transition: .6s cubic-bezier(.57,.67,.71,1.29);
+}
+
+.vlak1--schuif-uit {
+    transform: translateX(-20vw);
+}
+.vlak2--schuif-uit {
+    transform: translateX(-20vw);
+}
+.vlak3--schuif-uit {
+    transform: translateX(-20vw);
+}
